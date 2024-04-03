@@ -63,7 +63,6 @@ function adicionarContato() {
 function removerContato() {
     rl.question("Nome do contato a ser removido: ", function(nome) {
         gerenciadorProxy.removerContato(nome);
-        console.log("Contato removido com sucesso.");
         iniciarInterface();
     });
 }
